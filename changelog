@@ -1,4 +1,16 @@
-commit 73f1ed9650ae1d6d202ad920888d3a18b27624db (HEAD -> main, origin/main, origin/HEAD)
+commit 8007e8bd7ba377c32226030e35f37dfff3180a47 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 11:24:13 2024 -0400
+
+    * variables y ollama
+
+commit 655c87d64ee9cdaee1be9dcb81201a7db71c88ad
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sat Mar 30 23:54:40 2024 -0400
+
+    * changelog
+
+commit 73f1ed9650ae1d6d202ad920888d3a18b27624db
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sat Mar 30 23:54:31 2024 -0400
 
