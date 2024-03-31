@@ -1,4 +1,16 @@
-commit 96d60c83c514542df7e33b226851f637b868d7fd (HEAD -> main, origin/main, origin/HEAD)
+commit 7644121bcacbfbba8a0398bbc96623cf51ab801e (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 12:20:56 2024 -0400
+
+    * se agregan dependencias
+
+commit eaf2c80677d3062af8283dec5703262faccb069b
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 12:09:23 2024 -0400
+
+    * changelog
+
+commit 96d60c83c514542df7e33b226851f637b868d7fd
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sun Mar 31 12:09:12 2024 -0400
 
