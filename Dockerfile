@@ -8,8 +8,8 @@ RUN git clone https://github.com/OpenDevin/OpenDevin.git /opt/opendevin
 RUN pip install --upgrade pip
 RUN pip install pipenv uvicorn
 RUN cp config.toml.template config.toml
-##RUN python -m pipenv requirements > requirements.txt && python -m pip install -r requirements.txt
-RUN pipenv install -v
+RUN pipenv requirements > requirements.txt && pip install -r requirements.txt
+#RUN pipenv install -v
 RUN cd frontend && npm install
 COPY ./entrypoint.sh .
 EXPOSE 3001
