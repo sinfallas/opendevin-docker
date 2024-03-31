@@ -1,12 +1,17 @@
 # opendevin-docker
-Run OpenDevin inside Docker
+Run [OpenDevin](https://github.com/OpenDevin/OpenDevin) inside Docker
 
-construya con el comando:
+### Requirements
 
+* [Docker](https://docs.docker.com/engine/install/)
+* [Nvidia Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+
+Build with the following command:
+
+```bash
 docker compose up --build
+```
 
-luego vaya a la url: http://127.0.0.1:8080 y en el menu de configuracion descargue el modelo openchat:7b-v3.5-1210
+Then go to the url: http://127.0.0.1:8080 and in the configuration menu download the model: openchat:7b-v3.5-1210
 
-luego de finalizar la descarga vaya a la url http://127.0.0.1
-
-
+After finishing the download go to the url http://127.0.0.1
