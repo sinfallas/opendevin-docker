@@ -13,7 +13,6 @@ services:
     ports:
       - "80:80"
       - "3000:3000"
-      - "3001:3001"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     deploy:
@@ -35,7 +34,7 @@ services:
     depends_on:
       - ollama
     ports:
-      - 8080:8080
+      - "8080:8080"
     environment:
       - "OLLAMA_BASE_URL=http://ollama:11434"
       - 'WEBUI_SECRET_KEY='
@@ -59,7 +58,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
     ports:
-      - 11434:11434
+      - "11434:11434"
     deploy:
       resources:
         reservations:

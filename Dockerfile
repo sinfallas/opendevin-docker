@@ -3,7 +3,7 @@ LABEL maintainer="sinfallas@gmail.com"
 
 ENV PIPENV_VENV_IN_PROJECT=1
 WORKDIR /opt/opendevin
-RUN apt update && apt -y install --no-install-recommends --no-install-suggests rust-all nodejs npm docker.io containerd git curl nginx libnginx-mod-stream
+RUN apt update -qq && apt -y install --no-install-recommends --no-install-suggests rust-all nodejs npm docker.io containerd git curl nginx libnginx-mod-stream wget vim nano unzip zip build-essential && apt clean && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/OpenDevin/OpenDevin.git /opt/opendevin
 RUN pip install --upgrade pip
 RUN pip install pipenv uvicorn
@@ -12,5 +12,4 @@ RUN cd frontend && npm install
 COPY ./entrypoint.sh .
 EXPOSE 80
 EXPOSE 3000
-EXPOSE 3001
 CMD ["bash","/opt/opendevin/entrypoint.sh"]
