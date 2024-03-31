@@ -1,0 +1,23 @@
+services:
+  opendevin:
+    image: opendevin:0.1.4
+    container_name: opendevin
+    privileged: true
+    runtime: nvidia
+    tty: true
+    ulimits:
+      memlock: -1
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
+    ports:
+      - 3001:3001
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
