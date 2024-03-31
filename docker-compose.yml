@@ -11,7 +11,11 @@ services:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
     ports:
-      - 3001:3001
+      - "80:80"
+      - "3000:3000"
+      - "3001:3001"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     deploy:
       resources:
         reservations:
@@ -21,3 +25,11 @@ services:
               capabilities: [gpu]
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+    networks:
+      - opendevin
+
+networks:
+  opendevin:
+    external: true
+    name: opendevin
