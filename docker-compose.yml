@@ -1,6 +1,6 @@
 services:
   opendevin:
-    image: opendevin:0.1.4
+    build: ./
     container_name: opendevin
     privileged: true
     runtime: nvidia
@@ -10,6 +10,11 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
+      - LLM_BASE_URL=http://ollama:11434
+      - LLM_API_KEY=ollama
+      - WORKSPACE_DIR=./workspace
+      - LLM_MODEL=openchat:7b-v3.5-1210-q5_K_M
+      - LLM_EMBEDDING_MODEL=ollama_chat/nomic-embed-text:latest
     ports:
       - "80:80"
       - "3000:3000"
@@ -26,8 +31,36 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+    #depends_on:
+      #- ollama
     networks:
       - opendevin
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    privileged: true
+    pull_policy: always
+    runtime: nvidia
+    tty: true
+    ulimits:
+      memlock: -1
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
+    ports:
+      - 11434:11434
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks:
+      - opendevin
+    #volumes:
+      #- /mnt/ssd/ai/ollama:/root/.ollama
 
 networks:
   opendevin:
