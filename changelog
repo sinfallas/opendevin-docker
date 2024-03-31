@@ -1,4 +1,16 @@
-commit 8007e8bd7ba377c32226030e35f37dfff3180a47 (HEAD -> main, origin/main, origin/HEAD)
+commit 96d60c83c514542df7e33b226851f637b868d7fd (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 12:09:12 2024 -0400
+
+    * primera vez que corre
+
+commit 04240ae128464a7f64320ee844717f29c4a573d6
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 11:24:31 2024 -0400
+
+    * changelog
+
+commit 8007e8bd7ba377c32226030e35f37dfff3180a47
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sun Mar 31 11:24:13 2024 -0400
 
