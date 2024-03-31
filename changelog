@@ -1,4 +1,16 @@
-commit 7644121bcacbfbba8a0398bbc96623cf51ab801e (HEAD -> main, origin/main, origin/HEAD)
+commit dd9930ff28697a78d1935adef730728f1d02bd64 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 12:29:36 2024 -0400
+
+    * modifica el nombre del contenedor para no violar derechos de autor
+
+commit 30d2d9274f699f57d90588e2076c7a077c32f40d
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 12:21:08 2024 -0400
+
+    * changelog
+
+commit 7644121bcacbfbba8a0398bbc96623cf51ab801e
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sun Mar 31 12:20:56 2024 -0400
 
