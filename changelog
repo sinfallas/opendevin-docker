@@ -1,4 +1,16 @@
-commit e9c101dfebb996ef84e60acd291fbc1613e9ed96 (HEAD -> main, origin/main, origin/HEAD)
+commit 3b78de8ce1feca899852433471ec2dc717fe2298 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 22:25:17 2024 -0400
+
+    * modelo y pequenos ajustes
+
+commit a44200d30e7d06ffd9a64543c4cd92ea26c2686e (tag: v1.0.0)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Mar 31 12:39:07 2024 -0400
+
+    * changelog
+
+commit e9c101dfebb996ef84e60acd291fbc1613e9ed96
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sun Mar 31 12:38:59 2024 -0400
 
