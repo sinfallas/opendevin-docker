@@ -12,6 +12,6 @@ Build with the following command:
 docker compose up --build
 ```
 
-Then go to the url: http://127.0.0.1:8080 and in the configuration menu download the model: openchat:7b-v3.5-1210
+Then go to the url: http://127.0.0.1:8080 and in the configuration menu download the model: openchat:7b-v3.5-1210-q5_K_M
 
 After finishing the download go to the url http://127.0.0.1
