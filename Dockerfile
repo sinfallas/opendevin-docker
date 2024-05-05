@@ -4,7 +4,7 @@ LABEL maintainer="sinfallas@gmail.com"
 ENV PIPENV_VENV_IN_PROJECT=1
 RUN mkdir -p /opt/opendevin
 WORKDIR /opt/opendevin
-RUN apt update && apt -y install --no-install-recommends --no-install-suggests rust-all nodejs npm docker.io containerd git curl nginx libnginx-mod-stream wget vim nano unzip zip build-essential && apt clean && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt -y install --no-install-recommends --no-install-suggests rust-all nodejs npm docker.io containerd git curl nginx libnginx-mod-stream wget vim nano unzip zip build-essential && rm -rf /var/lib/{apt,dpkg,cache,log} && apt-get clean
 RUN git clone https://github.com/OpenDevin/OpenDevin.git /opt/opendevin
 RUN chmod -R 777 /opt/opendevin/
 RUN pip install --upgrade pip
