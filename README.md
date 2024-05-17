@@ -17,3 +17,8 @@ Then go to the url: http://127.0.0.1:8080 and in the configuration menu download
 After finishing the download go to the url http://127.0.0.1
 
 Get this image on Docker Hub: https://hub.docker.com/r/sinfallas/opendevin-docker
+
+
+Opendevin git: https://github.com/OpenDevin/OpenDevin
+
+Use the official image instead of this one (ghcr.io/opendevin/opendevin:0.5)
