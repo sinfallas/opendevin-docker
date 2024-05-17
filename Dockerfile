@@ -8,7 +8,7 @@ RUN apt update && apt -y install --no-install-recommends --no-install-suggests r
 RUN git clone https://github.com/OpenDevin/OpenDevin.git /opt/opendevin
 RUN chmod -R 777 /opt/opendevin/
 RUN pip install --upgrade pip
-RUN pip install pipenv uvicorn
+RUN pip install --upgrade pipenv uvicorn
 RUN pipenv lock --pre && pipenv requirements > requirements.txt && pip install -r requirements.txt
 RUN cd frontend && npm install
 COPY ./entrypoint.sh .
