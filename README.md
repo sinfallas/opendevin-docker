@@ -22,3 +22,7 @@ Get this image on Docker Hub: https://hub.docker.com/r/sinfallas/opendevin-docke
 Opendevin git: https://github.com/OpenDevin/OpenDevin
 
 Use the official image instead of this one (ghcr.io/opendevin/opendevin:0.5)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=sinfallas/opendevin-docker&type=Date)](https://www.star-history.com/#sinfallas/opendevin-docker&Date)
